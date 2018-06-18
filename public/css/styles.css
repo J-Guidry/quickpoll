@@ -1,0 +1,38 @@
+
+.container{
+    margin: 50px auto;
+}
+
+.search{
+    margin: 40px 65%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#optionSelect{
+    margin: 0 0 20px 0;
+}
+
+body{
+    background: rgb(220,220,220);
+}
+
+#title{
+    text-align: center;
+}
+
+#create{
+    padding: 0 0 0 20%;
+}
+
+.list-group-item{
+    width: 50%;
+    margin-top: 30px;
+}
+
+a:visited{
+    color: blue;
+}
+
