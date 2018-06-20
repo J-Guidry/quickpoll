@@ -4,9 +4,10 @@ namespace quickpoll\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class WelcomeController extends Controller
+class PollController extends Controller
 {
+    //
     public function index(){
-        return view("welcome");
+        return view("index");
     }
 }

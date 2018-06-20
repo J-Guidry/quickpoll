@@ -20,11 +20,9 @@ use quickpoll\Poll;
 use quickpoll\PollOption;
 use quickpoll\Vote;
 
-Route::get('/', "WelcomeController@index");
+// Route::get('/', "WelcomeController@index");
 
-// Route::get('/', function () {
-//     return view('index');
-// });
+Route::get('/', "PollController@index");
 
 Route::post('/polls', function(Request $request) {
     $input = $request->all();
