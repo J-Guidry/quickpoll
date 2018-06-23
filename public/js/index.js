@@ -35,11 +35,23 @@ const createPoll = event => {
 
 //     // axios.post("/polls", body)
 //     // .then(res=> console.log(res));
+
+    const clip = (url) => clipboard.readText(url); 
     const success = (id)=> {
+        //${id}
         let url = document.createElement('a');
         url.textContent = `${window.location.href}poll/${id}`;
         url.href = `${window.location.href}poll/${id}`;
+        let copy = document.createElement("button");
+        copy.className = "btn btn-info copy";
+        copy.textContent = "Copy";
+        copy.addEventListener("click", event => {
+            clipboard.writeText(url.textContent)
+
+            
+        });
         document.querySelector(".modal-body").appendChild(url);
+        document.querySelector(".modal-body").appendChild(copy);
     };
 
     $.ajax({

@@ -44,8 +44,10 @@ Route::get('/results/{id}', function($id){
     array_walk_recursive($votes, function($a) use (&$votes_array) { $votes_array[] = $a; });
     //dd($options_array ,$votes_array);
     $poll_title = Poll::find($id)->getAttribute('poll_name');
+    $total = array_sum($votes_array);
 
-    return view('results',['title' => $poll_title, 'options'=> $options_array, 'votes' => $votes_array, 'id' => $id]);
+
+    return view('results',['title' => $poll_title, 'options'=> $options_array, 'votes' => $votes_array, 'id' => $id, 'total' => $total]);
 });
 
 Route::get('/search_results', function(Request $request){

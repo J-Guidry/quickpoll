@@ -16,15 +16,11 @@ ul{
 }
 
 body{
-    background: rgb(220,220,220);
+    background: rgb(228,228,228);
 }
 
-#title{
-    text-align: center;
-}
-
-#create{
-    padding: 0 0 0 20%;
+.subtitle{
+    margin-bottom: 4%;
 }
 
 .list-group-item{
@@ -32,7 +28,35 @@ body{
     margin-top: 30px;
 }
 
-a:visited{
-    color: blue;
+.copy{
+    margin-left: 4%;
 }
 
+.question{
+    width: 30%;
+}
+.vote {
+    margin-top: 30px;
+}
+
+.radio{
+    margin-top: 1%;
+}
+
+.form-check-label{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.button_group{
+    margin-left: 15%;
+    margin-top: 4%;
+}
+
+.canvas{
+    margin-bottom: 3%
+}
+
+#total{
+    margin-bottom: 3%;
+}
